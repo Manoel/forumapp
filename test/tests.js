@@ -7,13 +7,11 @@
 
         type: 'get',
 
-        responseText: [{name: "forum1"}],
+        responseText: [{name: "forum1", category: "c1", threads: 0}],
 
         onAfterSuccess: function() {
 
-            //this.responseText = '[{"name":"f1", "category": "c1", "threads": 1}]';
-
-            console.log('success');
+            console.log(this.responseText);
         }
     });
 
